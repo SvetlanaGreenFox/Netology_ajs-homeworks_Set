@@ -1,0 +1,34 @@
+{
+  "name": "netology_ajs-homeworks_set",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SvetlanaGreenFox/Netology_ajs-homeworks_Set.git"
+  },
+  "author": "Svetlana Lisina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SvetlanaGreenFox/Netology_ajs-homeworks_Set/issues"
+  },
+  "homepage": "https://github.com/SvetlanaGreenFox/Netology_ajs-homeworks_Set#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.25.2",
+    "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "core-js": "^3.19.0"
+  }
+}
