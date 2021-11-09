@@ -3,11 +3,11 @@ export default class Team {
     this.members = new Set();
   }
 
-  add(character) {
-    if (this.members.has(character)) {
+  add({ type }) {
+    if (this.members.has(type)) {
       throw new Error('Выберите другого игрока!');
     }
-    this.members.add(character);
+    this.members.add(type);
   }
 
   addAll(...characters) {
