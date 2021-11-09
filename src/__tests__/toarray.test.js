@@ -1,4 +1,4 @@
-import Team from "../js/classteam";
+import Team from '../js/classteam';
 
 test('Convertation to array', () => {
   const Bowerman = {
@@ -36,4 +36,4 @@ test('Convertation to array', () => {
   const expected = ['Bowerman', 'Magician', 'Swordsman'];
 
   expect(team.toArray()).toEqual(expected);
-})
+});

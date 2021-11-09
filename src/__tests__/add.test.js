@@ -1,4 +1,4 @@
-import Team from "../js/classteam";
+import Team from '../js/classteam';
 
 test('Repeat Character', () => {
   const Bowerman = {
@@ -43,4 +43,4 @@ test('Repeat Character', () => {
   team.add(Swordsman);
 
   expect(() => team.add(Bowerman2)).toThrowError('Выберите другого игрока!');
-})
+});

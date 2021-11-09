@@ -1,4 +1,4 @@
-import Team from "../js/classteam";
+import Team from '../js/classteam';
 
 test('Add Characters', () => {
   const Bowerman = {
@@ -32,7 +32,7 @@ test('Add Characters', () => {
   team.addAll(Bowerman, Magician, Swordsman);
 
   expect(team.toArray()).toEqual(['Bowerman', 'Magician', 'Swordsman']);
-})
+});
 
 test('Add Characters', () => {
   const Bowerman = {
@@ -66,4 +66,4 @@ test('Add Characters', () => {
   team.addAll(Bowerman, Magician, Swordsman);
 
   expect(team.toArray()).toEqual(['Bowerman', 'Magician']);
-})
+});

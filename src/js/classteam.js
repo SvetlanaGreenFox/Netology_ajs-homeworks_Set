@@ -12,7 +12,7 @@ export default class Team {
   }
 
   addAll(...characters) {
-    for (const { type } of characters) {
+    for (const type of characters) {
       this.members.add(type);
     }
   }
