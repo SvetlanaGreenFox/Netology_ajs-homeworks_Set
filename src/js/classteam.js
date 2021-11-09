@@ -4,17 +4,14 @@ export default class Team {
   }
 
   add(character) {
-    const { type } = character;
-    if (this.members.has(type)) {
+    if (this.members.has(character)) {
       throw new Error('Выберите другого игрока!');
     }
-    this.members.add(type);
+    this.members.add(character);
   }
 
   addAll(...characters) {
-    for (const type of characters) {
-      this.members.add(type);
-    }
+    characters.map((type) => this.members.add(type.type));
   }
 
   toArray() {
