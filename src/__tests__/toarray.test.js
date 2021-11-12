@@ -33,7 +33,33 @@ test('Convertation to array', () => {
   team.add(Magician);
   team.add(Swordsman);
 
-  const expected = ['Bowerman', 'Magician', 'Swordsman'];
+  const expected = [
+    {
+      name: 'Bowerman',
+      type: 'Bowerman',
+      health: 100,
+      level: 1,
+      attack: 25,
+      defence: 25,
+    },
+    {
+      name: 'Magician',
+      type: 'Magician',
+      health: 100,
+      level: 1,
+      attack: 10,
+      defence: 40,
+    },
+    {
+      name: 'Swordsman',
+      type: 'Swordsman',
+      health: 100,
+      level: 1,
+      attack: 40,
+      defence: 10,
+    },
+
+  ];
 
   expect(team.toArray()).toEqual(expected);
 });
